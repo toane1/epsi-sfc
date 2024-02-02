@@ -1,21 +1,18 @@
 
-
 <script>
 export default{
+  components: 'HelloWorldOptionApi',
   props: {
     msg: String,
   },
   methods: {
-    sayHello(){
-      this.$emit('Hello !')
-    }
-
   }
 }
 </script>
 
 <template>
-  <p>Ce composant utilise : {{ msg }}</p>
+  <p>hello</p>
+  <HelloWorld msg="Vue - Vite"/>
 </template>
 
 <style scoped>

@@ -1,6 +1,11 @@
-<script setup>
+
+<script>
+import { RouterView } from "vue-router";
 import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+export default {
+  components: {HelloWorld}
+}
+
 </script>
 
 <template>
@@ -10,10 +15,13 @@ import TheWelcome from './components/TheWelcome.vue'
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
     </div>
+
   </header>
 
+  <p>app.view</p>
+
   <main>
-    <TheWelcome />
+    <RouterView/>
   </main>
 </template>
 
